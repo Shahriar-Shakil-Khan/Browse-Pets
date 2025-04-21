@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/927f1d16b1.js" crossorigin="anonymous"></script>
 
     <script>
         tailwind.config = {
@@ -37,7 +38,42 @@
     </style>
 </head>
 <body>
-    <Header> </Header>
+    <Header class="md:container md:mx-auto">
+        <!-- Navbar -->
+        <nav class="font_Sora">
+            <div class="navbar bg-base-100 shadow-lg bg-[#FFF4EB] container">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                      <li><a>Find a pet</a></li>
+                      <li><a>Breeds</a></li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+                  <img src="c1-assets/logo-header.png" alt="">
+                  <a class="btn btn-ghost text-xl hidden sm:block">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-5 ">
+                 <a href=""><i class="fa-solid fa-bell hidden sm:block"></i></a>
+                 <a href=""> <i class="fa-solid fa-magnifying-glass hidden sm:block"></i></a>
+                  <a class="hidden sm:block btn btn-outline btn-warning border-2 border-orange-200 pt-2">Login</a>
+                  <a class="btn bg-[#FFDC26] hidden sm:block pt-2">Register</a>
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </Header>
     <main> </main>
     <footer></footer>
 </body>
